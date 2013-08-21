@@ -198,17 +198,42 @@ h1{
     margin-bottom: 15px;
 }
 
-.step img{
+.step > img{
     float: left;
     width: 50%;
     border-radius: 14px;
 }
+.unprg{
+    display: block !important;
+    margin: 2px auto !important;
+    width: 30%;
+    position: relative;
+    left: 20%;
+}
+.max{
+    width: 150% !important;
+    position: relative;
+    left: -25%; 
+}
 .step .article{
     width: 50%;
-    padding: 12px;
+    padding: 12px !important;
 } 
 .step .article p{
     font-size: 25px;
+} 
+.text-small{
+    font-size: 22px;
+    line-height: 18px;
+}
+.step .article img, .pic {
+    display: block !important;
+    width: 30% !important;
+    margin:  5px auto;
+    border: 4px solid rgba(0,0,0,.75) !important;
+    border-radius:  15px !important;
+    float: none !important;
+
 } 
 
 /*

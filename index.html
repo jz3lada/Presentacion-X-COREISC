@@ -9,52 +9,14 @@
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-
-    <!--
-        
-        Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
-        presentation to work.
-        
-        This style below contains styles only for demo presentation. Browse it to see how impress.js
-        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
-        you to use them directly in your presentation.
-        
-        Be creative, build your own. We don't really want all impress.js presentations to look the same,
-        do we?
-        
-        When creating your own presentation get rid of this file. Start from scratch, it's fun!
-        
-    -->
-    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />    <link href="css/impress-demo.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
-<!--
-    
-    Body element is used by impress.js to set some useful class names, that will allow you to detect
-    the support and state of the presentation in CSS or other scripts.
-    
-    First very useful class name is `impress-not-supported`. This class means, that browser doesn't
-    support features required by impress.js, so you should apply some fallback styles in your CSS.
-    It's not necessary to add it manually on this element. If the script detects that browser is not
-    good enough it will add this class, but keeping it in HTML means that users without JavaScript
-    will also get fallback styles.
-    
-    When impress.js script detects that browser supports all required features, this class name will
-    be removed.
-    
-    The class name on body element also depends on currently active presentation step. More details about
-    it can be found later, when `hint` element is being described.
-    
--->
 <body class="impress-not-supported">
 
-<!--
-    For example this fallback message is only visible when there is `impress-not-supported` class on body.
--->
 <div class="fallback-message">
     <p>Actualiza tu navegador</p>
 </div>
@@ -65,18 +27,20 @@
     <div id="titulo" class="step" data-x="0" data-y="0" data-scale="4">
         <h1>X COREISC</h1>
         <span class="footnote"><sup>UNPRG</sup> 2014 <sup>LAMBAYEQUE</sup></span>
+    <img src="images/unprg.jpg" alt="" class="unprg">
     </div>
 
     <div id="fecha" class="step" data-x="3000" data-y="0" data-rotate="45" data-scale="4">
-        <p>Del<strong>8 al 12 de  Abril del 2014</strong> <br/>
+        <p>Del <strong> 8 al 12 de  Abril del 2014</strong> <br/>
         Lambayeque los espera <br/></p>
     </div>
     <div id="contenido" class="step" data-x="3000" data-y="3000" data-rotate="-45" data-scale="4">
-        <p>Tendremos</p>
+        <p>Tendremos:</p>
         <ul>
             <li>Conferencias Internacionales</li>
             <li>Conferencias Nacionales</li>
             <li>Talleres</li>
+            <li>Hackaton</li>
             <li>Noche deportiva</li>
             <li>Noche de talentos</li>
             <li>Fiesta de Apertura</li>
@@ -103,6 +67,7 @@
         <h2>Javi Jiménez Villar</h2>
         <img src="images/javi.jpg" alt="Javi Jiménez" />
         <article>
+            <img src="images/spain.gif" class="pic" />
             <p>
                 Founder & CTO at @tapquo<br/>
                 @lungojs/@quojs author<br/>
@@ -110,7 +75,6 @@
                 #W3C member<br/>
                 #HTML5 evangelist<br/>
                 sometimes... nerd #speaker<br/>
-
             </p>
         </article>
         <q>@SoyJavi</q>
@@ -120,6 +84,7 @@
         <h2>Diana Reyes</h2>
         <img src="images/tifis.jpg" alt="Diana reyes" />
         <article>
+            <img src="images/colombia.gif" alt=""  class="pic">
             <p>Formatted for IBM // We're living the digital dream // La tecnología no es mi hobbie, es mi estilo de vida// Creada para opinar</p>
         </article>
         <q>@Tifis</q>
@@ -129,6 +94,7 @@
         <h2>Júan Carlos Mejía Llanos</h2>
         <img src="images/Juan-Carlos-Mejía-Llano.png" alt="Juan c. Mejía Llanos" />
         <article>
+            <img src="images/colombia.gif" alt="" class="pic">
             <p>
                 Gerente de Comunidades Virtuales y Business Analytics en INVAMER. MBA, Blogger y docente. 15 años en Marketing Online. JCMejiaLlano@gmail.com
             </p>
@@ -139,7 +105,8 @@
         <h2>José Pablo Esquivel</h2>
         <img src="images/Jose_Pablo_Esquivel.jpg" alt="" />
         <article>
-            <p>Gerente Técnico Asociado para la región de Latinoamérica y Caribe de Cisco Networking Academy.
+            <img src="images/cr.gif" alt="" class="pic">
+            <p class="text-small">Gerente Técnico Asociado para la región de Latinoamérica y Caribe de Cisco Networking Academy.
  
 certificado en: CompTIA Security + Certified Professional, implementador certificado de la norma de Seguridad de Información ISO17799, Cisco Certified Security Professional (CCSP), Cisco Certified Network Professional (CCNP), Cisco Certified Network Associate (CCNA) y Cisco Certified Academy Instructor (CCAI).
             </p>
@@ -156,6 +123,7 @@ certificado en: CompTIA Security + Certified Professional, implementador certifi
 
     <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
         <h1 class="rotating">Ponentes Nacionales</h1>
+        <img src="images/peruvian.gif" alt="">
     </div>
     <div class="step slide" data-x="5000" data-y="-1500">
         <h2>Sergio Infante</h2>
@@ -215,22 +183,10 @@ Web Entrepreneur, Open Data y Web Developer PHP            </p>
 
 
 
-    <div id="its-in-3d" class="step" data-x="4200" data-y="500" data-z="-50" data-rotate-x="-40" data-rotate-y="50" data-scale="2">
+    <div id="cronograma" class="step" data-x="1200" data-y="6300" data-z="-100" data-rotate-x="-80" data-rotate-y="10" data-scale="2">
         <p><b class="imagination">@COREISCNORTE</b></p>
+        <img src="images/cronograma.jpg" alt="" class="max">
     </div>
-
-    <!--
-        
-        And the last one shows full power and flexibility of impress.js.
-        
-        You can not only position element in 3D, but also rotate it around any axis.
-        So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
-        10 degrees (clockwise) around Y axis.
-        
-        You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
-        as `data-rotate` (these two are basically aliases).
-        
-    -->
     <div id="its-in-3d" class="step" data-x="5200" data-y="2300" data-z="-100" data-rotate-x="-80" data-rotate-y="10" data-scale="2">
         <h1>Gracias :D</h1>
         <span class="footnote">Lambayeque los espera</span>
